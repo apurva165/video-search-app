@@ -1,7 +1,17 @@
 import React from "react";
+import SearchBar from './SearchBar';
 
-const App = () => {
-  return <div>app compoenet</div>;
+class App extends React.Component  {
+  state = ({term : ''})
+
+
+render() {
+    return (
+      <SearchBar query={this.onFormSubmit} />
+
+    )
+  }
+
 };
 
 export default App;
